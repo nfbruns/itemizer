@@ -12,6 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// NOTICE: SLIGHT REWORK FROM NOAH BRUNS
+// Shifting index by 1
+
 #[derive(Copy, Clone, Hash, PartialOrd, PartialEq, Eq, Ord, Debug)]
 pub struct Item {
     id: u32,

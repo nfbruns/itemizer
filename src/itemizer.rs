@@ -12,6 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// NOTICE: SLIGHT REWORK FROM NOAH BRUNS
+// make the itemized type abstract
+// shifting the index to also use 0
+
 use crate::item::Item;
 use fnv::FnvHashMap;
 use std::fmt::Debug;

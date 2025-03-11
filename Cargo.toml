@@ -1,7 +1,11 @@
 [package]
 name = "itemizer"
 version = "0.1.0"
+description = "Containing an itemizer to itemize structs"
 edition = "2021"
+authors = ["Chris Pearce <chris@pearce.org.nz>", "Noah Bruns <nbruns@efs.at>"]
+license = "Apache-2.0"
+repository = "https://github.com/nfbruns/itemizer"
 
 [dependencies]
 fnv = "1.0.7"
