@@ -1,6 +1,6 @@
 [package]
 name = "itemizer"
-version = "1.0.1"
+version = "1.0.2"
 description = "Containing an itemizer to itemize structs"
 edition = "2021"
 authors = ["Chris Pearce <chris@pearce.org.nz>", "Noah Bruns <nbruns@efs.at>"]
