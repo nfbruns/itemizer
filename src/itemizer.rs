@@ -16,6 +16,26 @@
 // make the itemized type abstract
 // shifting the index to also use 0
 
+//! Itemizer is a data structure that maps items to unique IDs.
+//!
+//! It is used to convert items into unique IDs, and back again.
+//!
+//! The Itemizer is generic over the type of the item, so it can be used with any type that implements the `Eq`, `Hash`, `Ord`, and `Clone` traits.
+//!
+//! # Examples
+//!
+//! ```
+//! use itemizer::Itemizer;
+//!
+//! let mut itemizer = Itemizer::new();
+//! let item1 = itemizer.id_of(&"item1".to_string());
+//! let item2 = itemizer.id_of(&"item2".to_string());
+//! let item3 = itemizer.id_of(&"item1".to_string());
+//!
+//! assert_eq!(itemizer.len(), 2);
+//! ```
+//!
+
 use crate::item::Item;
 use fnv::FnvHashMap;
 use std::fmt::Debug;
@@ -79,7 +99,6 @@ where
 
 impl Debug for Itemizer<String> {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        // Print all existing keys:
         for (key, value) in &self.item_str_to_id {
             writeln!(f, "{}: {}", key, value.as_index())?;
         }
