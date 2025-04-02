@@ -30,7 +30,7 @@ pub struct Itemizer<T> {
 
 impl<T> Itemizer<T>
 where
-    T: Eq + Hash + Ord + Clone,
+    T: Eq + Hash + Clone,
 {
     /// Creates a new, empty `Itemizer`.
     ///
